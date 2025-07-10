@@ -10,12 +10,20 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+	title="Do more. Research less."
+	subtitle="Suna completes the tasks you don't have time for."
+	imageSrc="/generated/image-a-professional-business-development-mana.webp"
+	centered={false}
 />
-<LogoScroller label="" generating />
+<LogoScroller 
+	label="Trusted by forward-thinking companies"
+	logoUrls={[
+		'https://logo.clearbit.com/notion.so',
+		'https://logo.clearbit.com/stripe.com',
+		'https://logo.clearbit.com/airtable.com',
+		'https://logo.clearbit.com/typeform.com'
+	]}
+/>
 
 <Summary
 	generating
