@@ -35,136 +35,210 @@ Please update features according to the company's product offering. Do not remov
 
 	// Props
 	const {
-		title = "Simple, transparent pricing",
-		subtitle = "Choose the plan that works best for your needs",
-		tierNames = ["Starter", "Pro", "Enterprise"],
+		title = "AI agent pricing that scales with you",
+		subtitle = "Pay only for what you use with our token-based system",
+		tierNames = ["Free", "Plus", "Pro", "Ultra"],
 		features = [
 			{
-				name: "Projects",
+				name: "AI token credits",
 				tiers: {
-					Starter: "5",
-					Pro: "Unlimited",
-					Enterprise: "Unlimited"
+					Free: "$5",
+					Plus: "$20",
+					Pro: "$50",
+					Ultra: "$200"
 				}
 			},
 			{
-				name: "Team members",
+				name: "Project visibility",
 				tiers: {
-					Starter: "1",
-					Pro: "10",
-					Enterprise: "Unlimited"
+					Free: "Public only",
+					Plus: "Private",
+					Pro: "Private",
+					Ultra: "Private"
 				}
 			},
 			{
-				name: "Storage",
+				name: "AI models",
 				tiers: {
-					Starter: "1GB",
-					Pro: "10GB",
-					Enterprise: "Unlimited"
+					Free: "Basic",
+					Plus: "Premium",
+					Pro: "Premium",
+					Ultra: "Premium"
 				}
 			},
 			{
-				name: "API access",
+				name: "Multi-step workflow execution",
 				tiers: {
-					Starter: false,
+					Free: true,
+					Plus: true,
 					Pro: true,
-					Enterprise: true
+					Ultra: true
 				}
 			},
 			{
-				name: "Custom domains",
+				name: "Data source integrations",
 				tiers: {
-					Starter: false,
+					Free: "Limited",
+					Plus: "Full access",
+					Pro: "Full access",
+					Ultra: "Full access"
+				}
+			},
+			{
+				name: "LinkedIn integration",
+				tiers: {
+					Free: false,
+					Plus: true,
 					Pro: true,
-					Enterprise: true
+					Ultra: true
 				}
 			},
 			{
-				name: "Analytics",
+				name: "PDF report generation",
 				tiers: {
-					Starter: "Basic",
+					Free: false,
+					Plus: true,
+					Pro: true,
+					Ultra: true
+				}
+			},
+			{
+				name: "Excel/spreadsheet export",
+				tiers: {
+					Free: false,
+					Plus: true,
+					Pro: true,
+					Ultra: true
+				}
+			},
+			{
+				name: "Web scraping capabilities",
+				tiers: {
+					Free: "Basic",
+					Plus: "Advanced",
 					Pro: "Advanced",
-					Enterprise: "Advanced"
+					Ultra: "Advanced"
 				}
 			},
 			{
-				name: "Support response time",
+				name: "Task replay functionality",
 				tiers: {
-					Starter: "24 hours",
-					Pro: "4 hours",
-					Enterprise: "1 hour"
+					Free: true,
+					Plus: true,
+					Pro: true,
+					Ultra: true
 				}
 			},
 			{
-				name: "Dedicated account manager",
+				name: "Open source access",
 				tiers: {
-					Starter: false,
+					Free: true,
+					Plus: true,
+					Pro: true,
+					Ultra: true
+				}
+			},
+			{
+				name: "Community support",
+				tiers: {
+					Free: true,
+					Plus: true,
+					Pro: true,
+					Ultra: true
+				}
+			},
+			{
+				name: "Priority support",
+				tiers: {
+					Free: false,
+					Plus: false,
 					Pro: false,
-					Enterprise: true
+					Ultra: true
 				}
 			},
 			{
-				name: "SLA",
+				name: "Self-hosted option",
 				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: "99.9%"
+					Free: true,
+					Plus: true,
+					Pro: true,
+					Ultra: true
 				}
 			}
 		],
 		tiers = [
 			{
-				name: "Starter",
-				monthlyPrice: 9.99,
-				yearlyPrice: 7.99, // 20% savings
-				description: "Perfect for individuals and small projects",
+				name: "Free",
+				monthlyPrice: 0,
+				yearlyPrice: 0,
+				description: "Perfect for getting started with AI automation",
 				features: [
-					"Up to 5 projects",
-					"Basic analytics",
-					"24-hour support response time",
-					"1GB storage"
+					"$5 in AI token credits",
+					"Public projects only",
+					"Basic AI models",
+					"Multi-step workflow execution",
+					"Open source access",
+					"Community support"
 				],
 				cta: {
-					label: "Get started",
-					href: "/signup?plan=starter"
+					label: "Get started free",
+					href: "/signup?plan=free"
 				}
 			},
 			{
-				name: "Pro",
-				monthlyPrice: 29.99,
-				yearlyPrice: 23.99, // 20% savings
-				description: "For growing teams and businesses",
+				name: "Plus",
+				monthlyPrice: 20,
+				yearlyPrice: 17, // 15% savings
+				description: "For individuals and small teams",
 				features: [
-					"Unlimited projects",
-					"Advanced analytics",
-					"4-hour support response time",
-					"10GB storage",
-					"Custom domains",
-					"Team collaboration tools"
+					"$20 in AI token credits",
+					"Private projects",
+					"Premium AI models",
+					"LinkedIn integration",
+					"PDF report generation",
+					"Excel/spreadsheet export",
+					"Advanced web scraping"
 				],
 				cta: {
 					label: "Get started",
-					href: "/signup?plan=pro"
+					href: "/signup?plan=plus"
 				},
 				highlight: true
 			},
 			{
-				name: "Enterprise",
-				monthlyPrice: null,
-				yearlyPrice: null,
-				description: "For large organizations with specific needs",
+				name: "Pro",
+				monthlyPrice: 50,
+				yearlyPrice: 43, // 15% savings
+				description: "For growing businesses and teams",
 				features: [
-					"Everything in Pro",
-					"Dedicated account manager",
-					"1-hour support response time",
-					"Unlimited storage",
-					"Advanced security features",
-					"Custom integrations",
-					"99.9% uptime SLA"
+					"$50 in AI token credits",
+					"Everything in Plus",
+					"Increased token allowance",
+					"Advanced workflow capabilities",
+					"Priority task execution",
+					"Enhanced integrations"
 				],
 				cta: {
-					label: "Contact sales",
-					href: "/contact"
+					label: "Get started",
+					href: "/signup?plan=pro"
+				}
+			},
+			{
+				name: "Ultra",
+				monthlyPrice: 200,
+				yearlyPrice: 170, // 15% savings
+				description: "For large organizations with high-volume needs",
+				features: [
+					"$200 in AI token credits",
+					"Everything in Pro",
+					"Maximum token allowance",
+					"Priority support",
+					"Dedicated account guidance",
+					"Custom workflow development"
+				],
+				cta: {
+					label: "Get started",
+					href: "/signup?plan=ultra"
 				}
 			}
 		]
@@ -188,22 +262,22 @@ Please update features according to the company's product offering. Do not remov
 		<div class="mb-8 flex justify-center">
 			<div class="inline-flex items-center rounded-full bg-gray-200 p-0.5 gap-0.5">
 				<button
-					class="rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-200 {!annual ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600 hover:text-gray-900'}"
+					class="rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-200 {!annual ? 'bg-white text-gray-900 border border-gray-200' : 'text-gray-600 hover:text-gray-900'}"
 					onclick={() => (annual = false)}
 				>
 					Monthly
 				</button>
 				<button
-					class="rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-200 {annual ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-600 hover:text-gray-900'}"
+					class="rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-200 {annual ? 'bg-white text-gray-900 border border-gray-200' : 'text-gray-600 hover:text-gray-900'}"
 					onclick={() => (annual = true)}
 				>
-					Annual <span class="text-xs ml-1 text-gray-500">Save 20%</span>
+					Annual <span class="text-xs ml-1 text-gray-500">Save 15%</span>
 				</button>
 			</div>
 		</div>
 	</div>
 
-	<div class="bb grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+	<div class="bb grid gap-6 md:grid-cols-2 lg:grid-cols-4">
 		{#each tiers as tier}
 			<div
 				class="flex flex-col rounded-xl bg-white p-6 ring ring-gray-200 transition-all duration-300 dark:bg-gray-800 dark:ring-gray-700"

@@ -17,33 +17,50 @@
 <Testimonials
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Keandra Williams",
+			position: "VP of Business Development",
+			company: "DataFlow Technologies",
 			quote:
-				"This solution transformed our workflow and increased productivity by 35% in just two months.",
+				"Suna saved us 18 hours weekly on prospect research. The autonomous LinkedIn and Crunchbase integration delivers qualified leads with zero manual work. ROI paid for itself in the first month.",
 			image:
-				"https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"/generated/image-a-confident-african-american-business-wo.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Marcus Chen",
+			position: "Growth Operations Manager",
+			company: "ScaleUp Solutions",
 			quote:
-				"The implementation was seamless and the support team was exceptional throughout the process.",
+				"The human approval workflow gives us confidence in AI decisions while maintaining speed. Open source transparency lets us audit exactly what Suna does with our data. Game-changer for our team.",
 			image:
-				"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+				"/generated/image-an-asian-american-male-business-developm.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Isabella Rodriguez",
+			position: "Head of Sales Operations",
+			company: "Venture Dynamics",
 			quote:
-				"We've tried multiple solutions, but this is the only one that perfectly addressed all our requirements.",
+				"Multi-step workflow execution across platforms like we've never seen. Suna handles competitor analysis, lead scoring, and report generation in one autonomous sequence. Worth every credit.",
 			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&estimonial-3.jpg"
+				"/generated/image-a-hispanic-female-entrepreneur-in-a-cont.webp"
 		}
 	]}
 />
 
-<CallToAction />
+<CallToAction
+	title="Let your AI employee take it from here"
+	subtitle="Stop wasting 15+ hours on research every week"
+	description="Business development teams lose valuable time to repetitive tasks. Suna handles multi-step lead research, data extraction, and analysis—fully autonomously—with built-in human approvals when stakes are high. You stay in control while getting work off your plate."
+	imageSrc="/generated/image-a-professional-business-person-smiling-w.webp"
+	callsToAction={[
+		{
+			href: "/signup",
+			label: "Get started free",
+			variant: "primary"
+		},
+		{
+			href: "/demo",
+			label: "See what Suna can do",
+			variant: "secondary"
+		}
+	]}
+/>
